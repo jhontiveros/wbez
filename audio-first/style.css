@@ -10,6 +10,7 @@
     --color-pri: #131313;
     --color-sec: #FFFFFF;
     --color-acc: #DA2E20;
+    --color-blk: #000000;
 
     --color-title: #FFFFFF;
     --color-subtitle: #878787;
@@ -18,4 +19,103 @@
 
     --font-header: 'Source Serif Pro', serif;
     --font-paragraph: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    background-color: var(--color-blk);
+}
+
+.accent-line {
+    background-color: var(--color-acc);
+    width: 100vw;
+    height: 5px;
+}
+
+.logo {
+    width: 155px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: .7em;
+}
+
+.donate {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+
+    padding: .7em;
+
+    background-color: #262626;
+    color: #F3F3F3;
+
+    align-items: center;
+}
+
+a {
+    font-family: var(--font-paragraph);
+    font-size: 15px;
+    font-weight: 400;
+
+    text-decoration: none;
+    letter-spacing: .05em;
+
+    color: #F3F3F3;
+}
+
+.player-container {
+    width: 100vw;
+    height: 22em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em;
+
+    background-color:hsla(28,100%,88%,1);
+    background-image:
+    radial-gradient(at 47% 92%, hsla(11,91%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 63% 93%, hsla(28,81%,70%,1) 0px, transparent 50%),
+    radial-gradient(at 4% 8%, hsla(357,79%,60%,1) 0px, transparent 50%),
+    radial-gradient(at 73% 68%, hsla(44,80%,69%,1) 0px, transparent 50%);
+}
+
+.content-container {
+    border: 2px solid green;
+    text-align: center;
+
+    padding: .5em;
+}
+
+h2 {
+    font-family: var(--font-header);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 1.5rem;
+
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-family: var(--font-paragraph);
+    font-weight: 400;
+    font-size: 12px;
+
+    padding-bottom: 5px;
+}
+
+p {
+    font-family: var(--font-paragraph);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.waveform-player {
+    border: 2px solid purple;
+    height: 8em;
 }
