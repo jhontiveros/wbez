@@ -57,7 +57,7 @@ nav {
     align-items: center;
 }
 
-a {
+.donate a {
     font-family: var(--font-paragraph);
     font-size: 15px;
     font-weight: 400;
@@ -92,7 +92,7 @@ a {
     padding: .5em;
 }
 
-h2 {
+.content-container h2 {
     font-family: var(--font-header);
     font-weight: 600;
     font-size: 21px;
@@ -101,7 +101,7 @@ h2 {
     padding-bottom: 10px;
 }
 
-h4 {
+.content-container h4 {
     font-family: var(--font-paragraph);
     font-weight: 400;
     font-size: 12px;
@@ -109,7 +109,7 @@ h4 {
     padding-bottom: 5px;
 }
 
-p {
+.content-container p {
     font-family: var(--font-paragraph);
     font-weight: 400;
     font-size: 13px;
@@ -121,7 +121,38 @@ p {
 }
 
 #waveform {
-    height: 64px;
-    overflow: hidden;
+    /* height: 64px;
+    overflow: hidden; */
 
 }
+
+.carousel-title {
+    border: 2px solid orangered;
+    padding-left: .7em;
+}
+
+.carousel-title h2, h3 {
+    font-family: var(--font-paragraph);
+}
+
+.carousel-title h2 {
+    margin-top: -.3em;
+}
+
+.show {
+    border: 2px solid green;
+
+    display: flex;
+    gap: 5px;
+}
+
+.show img {
+    width: 25%;
+}
+
+.show-details {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
