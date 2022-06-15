@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    background-color: var(--color-pri);
+}
+
 :root {
     --color-pri: #131313;
     --color-sec: #FFFFFF;
