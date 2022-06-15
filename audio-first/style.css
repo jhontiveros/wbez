@@ -275,9 +275,13 @@ hr {
     color: var(--color-content);
 }
 
+.lead-image {
+    background-color: var(--color-pri);
+}
+
 .lead-image img{
     width: 100%;
-    padding: 1em 0 1em 0;
+    padding: 1em 0 2em 0;
 }
 
 footer {
