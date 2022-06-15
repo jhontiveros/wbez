@@ -86,7 +86,6 @@ nav {
 }
 
 .content-container {
-    border: 2px solid green;
     text-align: center;
 
     padding: .5em;
@@ -116,19 +115,34 @@ nav {
 }
 
 .waveform-player {
-    border: 2px solid purple;
-    height: 8em;
+    padding-left: .5em;
+    padding-right: .5em;
+
+    margin-top: -1em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 #waveform {
-    /* height: 64px;
-    overflow: hidden; */
+    height: 64px;
+    overflow: hidden;
+}
 
+#waveform > wave > wave {
+    border-right: none !important;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .carousel-title {
     border: 2px solid orangered;
-    padding-left: .7em;
+    padding-left: .5em;
 }
 
 .carousel-title h2, h3 {
