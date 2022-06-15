@@ -166,10 +166,15 @@ nav {
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar; 
 
-    width: 240%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
     gap: .2em;
+}
+
+.carousel-cards::-webkit-scrollbar {
+    display: none;
 }
 
 .show {
@@ -178,6 +183,7 @@ nav {
 
     display: flex;
     gap: 5px;
+    flex: 0 0 auto;
 }
 
 .show img {
