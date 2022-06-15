@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
 * {
     margin: 0;
@@ -19,6 +19,7 @@
 
     --font-header: 'Source Serif Pro', serif;
     --font-paragraph: 'Source Sans Pro', sans-serif;
+    --font-article: 'Noto Serif', serif;
 }
 
 header {
@@ -220,4 +221,40 @@ nav {
 
 .line-break {
     border-left: 2px solid #272727;
+}
+
+hr {
+    border: 1px solid #272727;
+    margin: 1em .5em .5em .5em;
+}
+
+.article {
+    padding: .5em;
+}
+
+.article p{
+    font-size: 17px;
+    padding-bottom: 11px;
+}
+
+.date-socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter {
+    padding-top: 1em;
+}
+
+.article-content p {
+    font-family: var(--font-article);
+    font-size: 18px; 
+
+    padding-top: .5em;
 }
