@@ -149,6 +149,10 @@ nav {
     display: none;
 }
 
+main {
+    background-color: var(--color-pri);
+}
+
 .carousel-title {
     padding: .5em;
 }
@@ -160,10 +164,12 @@ nav {
 .carousel-title h2 {
     margin-top: -.3em;
     font-size: 21px;
+    color: var(--color-title)
 }
 
 .carousel-title h3 {
     font-size: 11px;
+    color: var(--color-subtitle);
 }
 
 .carousel-cards {
@@ -201,11 +207,13 @@ nav {
 
 .show-content h3 {
     font-size: 16px;
+    color: var(--color-title);
     gap: 7px;
 }
 
 .show-content p {
     font-size: 13px;
+    color: var(--color-socials);
 }
 
 .show-details {
@@ -215,7 +223,7 @@ nav {
 }
 
 .show-details img {
-    width: 3%;
+    width: 2%;
     padding: 0;
 }
 
@@ -235,6 +243,8 @@ hr {
 .article p{
     font-size: 17px;
     padding-bottom: 11px;
+
+    color: var(--color-title);
 }
 
 .date-socials {
@@ -250,6 +260,10 @@ hr {
 
 .newsletter {
     padding-top: 1em;
+    font-style: italic;
+    font-weight: 600;
+
+    color: var(--color-title);
 }
 
 .article-content p {
@@ -257,4 +271,24 @@ hr {
     font-size: 18px; 
 
     padding-top: .5em;
+
+    color: var(--color-content);
+}
+
+.lead-image img{
+    width: 100%;
+    padding: 1em 0 1em 0;
+}
+
+footer {
+    background-color: var(--color-blk);
+    text-align: center;
+
+    height: 10%;
+    padding: 1em;
+}
+
+footer p {
+    color: var(--color-content);
+    padding-top: .5rem;
 }
