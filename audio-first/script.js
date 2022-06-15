@@ -10,8 +10,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     wavesurfer.load('media/frank.mp3');
 
-    const button = document.querySelector('[data-action="play"]');
-    button.addEventListener('click', wavesurfer.playPause.bind(wavesurfer));
+    let backTen = document.getElementById("backTen");
+    let playBtn = document.getElementById("playBtn");
+    let forwardTen = document.getElementById("forwardTen");
+
+    backTen.onclick = function(){
+        wavesurfer.skip(-10);
+    }
+
+    playBtn.onclick = function(){
+        wavesurfer.playPause();
+    }
+
+    forwardTen.onclick = function(){
+        wavesurfer.skip(10);
+    }
+
 
   });
   
