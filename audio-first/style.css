@@ -149,8 +149,7 @@ nav {
 }
 
 .carousel-title {
-    border: 2px solid orangered;
-    padding-left: .5em;
+    padding: .5em;
 }
 
 .carousel-title h2, h3 {
@@ -159,6 +158,11 @@ nav {
 
 .carousel-title h2 {
     margin-top: -.3em;
+    font-size: 21px;
+}
+
+.carousel-title h3 {
+    font-size: 11px;
 }
 
 .carousel-cards {
@@ -178,7 +182,6 @@ nav {
 }
 
 .show {
-    border: 2px solid green;
     width: 80%;
 
     display: flex;
@@ -191,13 +194,30 @@ nav {
     padding-left: .5em;
 }
 
-.show-details {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
-.show-content p, h3 {
+.show-content h3, p {
     font-family: var(--font-paragraph);
 }
 
+.show-content h3 {
+    font-size: 16px;
+    gap: 7px;
+}
+
+.show-content p {
+    font-size: 13px;
+}
+
+.show-details {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.show-details img {
+    width: 3%;
+    padding: 0;
+}
+
+.line-break {
+    border-left: 2px solid #272727;
+}
