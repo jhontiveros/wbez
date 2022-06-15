@@ -12,14 +12,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     let backTen = document.getElementById("backTen");
     let playBtn = document.getElementById("playBtn");
+    let pauseBtn = document.getElementById("pauseBtn");
+    let playPause = document.getElementById("playPause");
     let forwardTen = document.getElementById("forwardTen");
 
     backTen.onclick = function(){
         wavesurfer.skip(-10);
     }
 
-    playBtn.onclick = function(){
+    playPause.onclick = function(){
         wavesurfer.playPause();
+        if (wavesurfer.isPlaying()) {
+            playBtn.style.display = "none";
+            pauseBtn.style.display = "block";
+        } else {
+            playBtn.style.display = "block";
+            pauseBtn.style.display = "none";
+        }
     }
 
     forwardTen.onclick = function(){

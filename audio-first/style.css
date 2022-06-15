@@ -140,6 +140,10 @@ nav {
     gap: 30px;
 }
 
+#pauseBtn {
+    display: none;
+}
+
 .carousel-title {
     border: 2px solid orangered;
     padding-left: .5em;
