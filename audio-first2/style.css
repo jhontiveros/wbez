@@ -7,7 +7,7 @@
 }
 
 html, body {
-    */background-color: var(--color-blk);
+    background-color: var(--color-pri);
 }
 
 :root {
@@ -77,9 +77,13 @@ nav {
     color: #F3F3F3;
 }
 
+main {
+    background-color: var(--color-pri);
+}
+
 .player-container {
     border: 2px solid green;
-    margin: .7em;
+    margin: .5em;
     height: 405px;
 
     display: flex;
@@ -106,4 +110,86 @@ nav {
 .content-container h2, h4, p {
     font-size: 12px !important;
     color: var(--color-title);
+}
+
+.carousel-title {
+    padding: .5em;
+}
+
+.carousel-title h2, h3 {
+    font-family: var(--font-paragraph);
+}
+
+.carousel-title h2 {
+    margin-top: -.3em;
+    font-size: 21px;
+    color: var(--color-title)
+}
+
+.carousel-title h3 {
+    font-size: 11px;
+    color: var(--color-subtitle);
+}
+
+.carousel-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    gap: .2em;
+}
+
+.carousel-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.show {
+    width: 80%;
+
+    display: flex;
+    gap: 5px;
+    flex: 0 0 auto;
+}
+
+.show img {
+    width: 30%;
+    padding-left: .5em;
+}
+
+.show-content h3, p {
+    font-family: var(--font-paragraph);
+}
+
+.show-content h3 {
+    font-size: 16px;
+    color: var(--color-title);
+    gap: 7px;
+}
+
+.show-content p {
+    font-size: 13px;
+    color: var(--color-socials);
+}
+
+.show-details {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.show-details img {
+    width: 2%;
+    padding: 0;
+}
+
+.line-break {
+    border-left: 2px solid #272727;
+}
+
+hr {
+    border: 1px solid #272727;
+    margin: 1em .5em .5em .5em;
 }

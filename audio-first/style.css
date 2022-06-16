@@ -7,7 +7,7 @@
 }
 
 html, body {
-    background-color: var(--color-blk);
+    background-color: var(--color-pri);
 }
 
 :root {
@@ -75,6 +75,10 @@ nav {
     letter-spacing: .05em;
 
     color: #F3F3F3;
+}
+
+main {
+    background-color: var(--color-pri);
 }
 
 .player-container {
@@ -151,10 +155,6 @@ nav {
 
 #pauseBtn {
     display: none;
-}
-
-main {
-    background-color: var(--color-pri);
 }
 
 .carousel-title {
