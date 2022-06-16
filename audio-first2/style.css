@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--color-blk);
+}
+
+:root {
+    --color-pri: #131313;
+    --color-sec: #FFFFFF;
+    --color-acc: #DA2E20;
+    --color-blk: #000000;
+
+    --color-title: #FFFFFF;
+    --color-subtitle: #878787;
+    --color-content: #DADADA;
+    --color-socials: #5A5A5A;
+
+    --font-header: 'Source Serif Pro', serif;
+    --font-paragraph: 'Source Sans Pro', sans-serif;
+    --font-article: 'Noto Serif', serif;
+}
+
+header {
+    background-color: var(--color-blk);
+}
+
+.accent-line {
+    background-color: var(--color-acc);
+    width: 100vw;
+    height: 5px;
+}
+
+.logo {
+    width: 155px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: .7em;
+}
+
+.donate {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+
+    padding-left: .7em;
+    padding-right: .7em;
+
+    padding-top: .9em;
+    padding-bottom: .9em;
+
+    background-color: #262626;
+    color: #F3F3F3;
+
+    align-items: center;
+}
+
+.donate a {
+    font-family: var(--font-paragraph);
+    font-size: 15px;
+    font-weight: 400;
+
+    text-decoration: none;
+    letter-spacing: .05em;
+
+    color: #F3F3F3;
+}
