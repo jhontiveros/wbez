@@ -76,3 +76,34 @@ nav {
 
     color: #F3F3F3;
 }
+
+.player-container {
+    border: 2px solid green;
+    margin: .7em;
+    height: 405px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+
+    background-color: var(--color-blk);
+}
+
+.lead-image {
+    border: 2px solid orange;
+    height: 210px;
+    width: 210px;
+
+    margin-top: 27px;
+}
+
+.content-container {
+    border: 2px solid purple;
+    margin: 28px 12px 28px 12px
+}
+
+.content-container h2, h4, p {
+    font-size: 12px !important;
+    color: var(--color-title);
+}
