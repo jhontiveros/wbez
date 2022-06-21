@@ -294,6 +294,41 @@ hr {
     padding: 1em 0 2em 0;
 }
 
+.accordion {
+    min-height: 150px;
+}
+
+.detail-title {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    margin: .5em;
+}
+
+.detail-title button, input[type="submit"], input[type="reset"] {
+    background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+
+    font-size: 21px;
+    font-family: var(--font-paragraph);
+    font-weight: 800;
+    color: var(--color-title)
+}
+
+.detail-content {
+    margin: .5em;
+}
+
+.detail-content p {
+    font-family: var(--font-article);
+    font-size: 17px;
+    color: var(--color-content);
+}
+
 footer {
     background-color: var(--color-blk);
     text-align: center;
