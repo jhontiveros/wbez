@@ -103,13 +103,37 @@ main {
 }
 
 .content-container {
-    border: 2px solid purple;
-    margin: 28px 12px 28px 12px
+    margin: 28px 12px 28px 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .content-container h2, h4, p {
-    font-size: 12px !important;
+    font-family: var(--font-paragraph);
+}
+
+.content-container h2 {
+    font-size: 20px;
+    line-height: 1.4rem;
     color: var(--color-title);
+}
+
+.content-container p {
+    font-size: 12px;
+    color: var(--color-sec);
+}
+
+.show-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.show-date h4 {
+    font-size: 12px;
+    color: var(--color-acc);
 }
 
 .carousel-title {
@@ -194,14 +218,16 @@ hr {
     margin: 1em .5em .5em .5em;
 }
 
+.accordion {
+    height: 100px;
+}
+
 .detail-title {
-    border: 2px solid red;
     display: flex;
     align-items: center;
 
     gap: 10px;
     padding-top: 10px;
-    padding-bottom: 10px;
     margin: .5em;
 }
 
@@ -219,7 +245,6 @@ hr {
 }
 
 .detail-content {
-    border: 2px solid yellowgreen;
     margin: .5em;
 }
 
