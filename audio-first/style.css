@@ -290,11 +290,11 @@ hr {
 
 .lead-image img{
     width: 100%;
-    padding: 1em 0 2em 0;
+    padding: 1em 0 1em 0;
 }
 
 .accordion {
-    min-height: 150px;
+    min-height: 100px;
 }
 
 .detail-title {
@@ -322,6 +322,8 @@ hr {
     margin: .5em;
     padding: .5em;
     background-color: #262626;
+
+    display: none;
 }
 
 .detail-content p {
