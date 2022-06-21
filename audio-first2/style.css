@@ -193,3 +193,36 @@ hr {
     border: 1px solid #272727;
     margin: 1em .5em .5em .5em;
 }
+
+.detail-title {
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    margin: .5em;
+}
+
+.detail-title button, input[type="submit"], input[type="reset"] {
+    background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+
+    font-size: 21px;
+    font-family: var(--font-paragraph);
+    font-weight: 800;
+    color: var(--color-title)
+}
+
+.detail-content {
+    border: 2px solid yellowgreen;
+    margin: .5em;
+}
+
+.detail-content p {
+    font-family: var(--font-paragraph);
+    font-size: 13px;
+    color: var(--color-content);
+}
