@@ -83,7 +83,7 @@ main {
 
 .player-container {
     width: 100vw;
-    height: 22em;
+    height: 23em;
 
     display: flex;
     flex-direction: column;
@@ -237,7 +237,7 @@ main {
 
 hr {
     border: 1px solid #272727;
-    margin: 1em .5em .5em .5em;
+    margin: .7em .5em .5em .5em;
 }
 
 .article {
@@ -312,7 +312,7 @@ hr {
 	cursor: pointer;
 	outline: inherit;
 
-    font-size: 21px;
+    font-size: 19px;
     font-family: var(--font-paragraph);
     font-weight: 800;
     color: var(--color-title)
