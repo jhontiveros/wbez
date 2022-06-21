@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
     let wavesurfer = WaveSurfer.create({
         container: document.querySelector('#waveform'),
-        waveColor: '#6E6F70',
-        progressColor: '#EB3223',
+        waveColor: '#7F6F9C',
+        progressColor: '#2C1A58',
 
         responsive: true,
         

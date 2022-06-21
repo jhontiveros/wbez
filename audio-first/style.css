@@ -90,12 +90,12 @@ main {
     justify-content: center;
     gap: .5em;
 
-    background-color:hsla(28,100%,88%,1);
+    background-color:#E9BCD5;
     background-image:
-    radial-gradient(at 47% 92%, hsla(11,91%,69%,1) 0px, transparent 50%),
-    radial-gradient(at 63% 93%, hsla(28,81%,70%,1) 0px, transparent 50%),
-    radial-gradient(at 4% 8%, hsla(357,79%,60%,1) 0px, transparent 50%),
-    radial-gradient(at 73% 68%, hsla(44,80%,69%,1) 0px, transparent 50%);
+    radial-gradient(at 47% 92%, #B49EDC 0px, transparent 50%),
+    radial-gradient(at 63% 93%, #C4A6EB 0px, transparent 50%),
+    radial-gradient(at 4% 8%, #8FD9F1 0px, transparent 50%),
+    radial-gradient(at 73% 68%, #E9BCD5 0px, transparent 50%);
 }
 
 .content-container {
@@ -267,7 +267,6 @@ hr {
     padding-top: 1em;
     font-style: italic;
     font-weight: 600;
-
     color: var(--color-title);
 }
 
@@ -321,12 +320,16 @@ hr {
 
 .detail-content {
     margin: .5em;
+    padding: .5em;
+    background-color: #262626;
 }
 
 .detail-content p {
-    font-family: var(--font-article);
-    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
     color: var(--color-content);
+
+    
 }
 
 footer {
