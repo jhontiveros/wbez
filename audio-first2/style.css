@@ -82,7 +82,6 @@ main {
 }
 
 .player-container {
-    border: 2px solid green;
     margin: .5em;
     min-height: 405px;
 
@@ -91,15 +90,27 @@ main {
     justify-content: center;
     align-items:center ;
 
-    background-color: var(--color-blk);
+    background-image: url(media/lead_blur.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .lead-image {
-    border: 2px solid orange;
     height: 210px;
     width: 210px;
 
     margin-top: 27px;
+
+    background-image: url(media/lead-crop.jpeg);
+    background-size: 100%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.lead-image {
+    padding: .3em;
 }
 
 .content-container {
@@ -118,6 +129,8 @@ main {
     font-size: 20px;
     line-height: 1.4rem;
     color: var(--color-title);
+
+    text-shadow: 1.5px 1.5px 4px var(--color-blk);
 }
 
 .content-container p {
