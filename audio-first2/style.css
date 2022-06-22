@@ -84,7 +84,7 @@ main {
 .player-container {
     border: 2px solid green;
     margin: .5em;
-    height: 405px;
+    min-height: 405px;
 
     display: flex;
     flex-direction: column;
@@ -219,7 +219,7 @@ hr {
 }
 
 .accordion {
-    height: 130px;
+    min-height: 130px;
 }
 
 .detail-title {
@@ -246,12 +246,22 @@ hr {
 
 .detail-content {
     margin: .5em;
+    display: none;
 }
 
 .detail-content p {
     font-family: var(--font-paragraph);
     font-size: 14px;
     color: var(--color-content);
+}
+
+.highlight {
+    color: var(--color-acc);
+    text-decoration: underline;
+}
+
+.slant {
+    font-style: italic;
 }
 
 footer {
