@@ -82,7 +82,7 @@ main {
 }
 
 .player-container {
-    margin: .5em;
+    margin: .8em;
     min-height: 405px;
 
     display: flex;
@@ -99,7 +99,7 @@ main {
     height: 210px;
     width: 210px;
 
-    margin-top: 27px;
+    margin-top: 20px;
 
     background-image: url(media/lead-crop.jpeg);
     background-size: 100%;
@@ -114,7 +114,7 @@ main {
 }
 
 .content-container {
-    margin: 28px 12px 28px 12px;
+    margin: 20px 12px 20px 12px;
 
     display: flex;
     flex-direction: column;
@@ -150,7 +150,7 @@ main {
 }
 
 .carousel-title {
-    padding: .5em;
+    padding: .8em;
 }
 
 .carousel-title h2, h3 {
@@ -193,7 +193,7 @@ main {
 
 .show img {
     width: 30%;
-    padding-left: .5em;
+    padding-left: .8em;
 }
 
 .show-content h3, p {
@@ -228,7 +228,7 @@ main {
 
 hr {
     border: 1px solid #272727;
-    margin: 1em .5em .5em .5em;
+    margin: 1em .8em .5em .8em;
 }
 
 .accordion {
@@ -241,7 +241,7 @@ hr {
 
     gap: 10px;
     padding-top: 10px;
-    margin: .5em;
+    margin: .8em;
 }
 
 .detail-title button, input[type="submit"], input[type="reset"] {
@@ -258,13 +258,13 @@ hr {
 }
 
 .detail-content {
-    margin: .5em;
+    margin: .8em;
     display: none;
 }
 
 .detail-content p {
     font-family: var(--font-paragraph);
-    font-size: 14px;
+    font-size: 16px;
     color: var(--color-content);
 }
 
