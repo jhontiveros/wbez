@@ -327,11 +327,9 @@ hr {
 }
 
 .detail-content p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-    color: var(--color-content);
-
-    
+    font-family: var(--font-article);
+    font-size: 16px;
+    color: var(--color-content); 
 }
 
 footer {

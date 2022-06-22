@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         responsive: true,
         
         barWidth: 3,
-        barHeight: 1,
+        barHeight: 1.8,
         barGap: null
     });
     wavesurfer.load('media/p1_audio.mp3');
