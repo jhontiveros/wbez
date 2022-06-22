@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         barHeight: 1,
         barGap: null
     });
-    wavesurfer.load('media/frank.mp3');
+    wavesurfer.load('media/p1_audio.mp3');
 
     let backTen = document.getElementById("backTen");
     let playBtn = document.getElementById("playBtn");
