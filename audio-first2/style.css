@@ -99,7 +99,7 @@ main {
     height: 210px;
     width: 210px;
 
-    margin-top: 20px;
+    margin-top: 25px;
 
     background-image: url(media/lead-crop.jpeg);
     background-size: 100%;
@@ -114,7 +114,7 @@ main {
 }
 
 .content-container {
-    margin: 20px 12px 20px 12px;
+    margin: 25px 12px 25px 12px;
 
     display: flex;
     flex-direction: column;
@@ -264,7 +264,7 @@ hr {
 
 .detail-content p {
     font-family: var(--font-paragraph);
-    font-size: 16px;
+    font-size: 18px;
     color: var(--color-content);
 }
 
@@ -275,6 +275,95 @@ hr {
 
 .slant {
     font-style: italic;
+}
+
+.audio-player {
+    height: 50px;
+    width: 350px;
+    background: #444;
+    box-shadow: 0 0 20px 0 #000a;
+  
+    font-family: arial;
+    color: white;
+    font-size: 0.75em;
+    overflow: hidden;
+  
+    display: none;
+    grid-template-rows: 6px auto;
+}
+
+.timeline {
+    background: white;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 2px 10px 0 #0008;
+}
+
+.progress {
+    background: coral;
+    width: 0%;
+    height: 100%;
+    transition: 0.25s;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 20px;
+}
+
+.play-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid #0000;
+    border-left: 13px solid white;
+}
+
+.pause {
+    height: 15px;
+    width: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.pause::before {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background: white;
+    content: "";
+    height: 15px;
+    width: 3px;
+}
+
+.pause::after {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    background: white;
+    content: "";
+    height: 15px;
+    width: 3px;
+}
+
+.exit {
+    height: 20px;
+    width: 20px;
+}
+
+#pauseBtn {
+    display: none;
 }
 
 footer {
