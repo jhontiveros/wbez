@@ -279,17 +279,18 @@ hr {
 
 .audio-player {
     height: 50px;
-    width: 350px;
+    width: 95vw;
+    margin: 2.5vw;
     background: #444;
     box-shadow: 0 0 20px 0 #000a;
   
-    font-family: arial;
-    color: white;
+    font-family: var(--font-paragraph);
+    color: var(--color-content);
     font-size: 0.75em;
     overflow: hidden;
   
     display: none;
-    grid-template-rows: 6px auto;
+    grid-template-rows: 5px auto;
 }
 
 .timeline {
@@ -310,8 +311,7 @@ hr {
 .controls {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    padding: 0 20px;
+    align-items: center;
 }
 
 .play-container {
@@ -320,19 +320,25 @@ hr {
     align-items: center;
 }
 
+.play-image {
+    background-color: red;
+    height: 3.8em;
+    width: 3.8em;
+}
+
 .play {
     cursor: pointer;
     position: relative;
     left: 0;
     height: 0;
     width: 0;
-    border: 7px solid #0000;
-    border-left: 13px solid white;
+    border: 12px solid #0000;
+    border-left: 17px solid white;
 }
 
 .pause {
-    height: 15px;
-    width: 20px;
+    height: 24px;
+    width: 29px;
     cursor: pointer;
     position: relative;
 }
@@ -343,18 +349,18 @@ hr {
     left: 0px;
     background: white;
     content: "";
-    height: 15px;
-    width: 3px;
+    height: 24px;
+    width: 4px;
 }
 
 .pause::after {
     position: absolute;
     top: 0;
-    right: 8px;
+    right: 15px;
     background: white;
     content: "";
-    height: 15px;
-    width: 3px;
+    height: 24px;
+    width: 4px;
 }
 
 .exit {
