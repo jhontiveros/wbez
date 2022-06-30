@@ -193,7 +193,7 @@ main {
 }
 
 .show {
-    width: 80%;
+    width: 75%;
 
     display: flex;
     gap: 5px;
@@ -203,6 +203,7 @@ main {
 .show img {
     width: 30%;
     padding-left: .5em;
+    padding-right: .3em;
 }
 
 .show-content h3, p {
@@ -229,6 +230,12 @@ main {
 .show-details img {
     width: 2%;
     padding: 0;
+}
+
+.story-play {
+    width: 14%;
+    margin-left: -15px;
+    padding-right: 5px;
 }
 
 .line-break {
